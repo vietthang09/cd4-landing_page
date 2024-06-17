@@ -1,0 +1,42 @@
+.clients {
+  padding: 30px 0;
+  padding-bottom: 80px;
+  .flex-box {
+    .client {
+      padding: 10px;
+      margin: 5px;
+      display: flex;
+      border: 1px solid #5e5e5e;
+      border-radius: 3px;
+      width: 200px;
+      transition: all 0.3s;
+      height: 120px;
+      align-items: center;
+      filter: grayscale(100%);
+      transition: all 0.3s;
+      .member {
+        width: 200px;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        filter: grayscale(0%);
+        border-color: #344a33;
+      }
+    }
+    .active {
+      filter: grayscale(0%);
+      background: #ad7e865b;
+      border-color: #ad7e86;
+    }
+  }
+  @media (min-width: 768px) {
+    .flex-box {
+      padding: 0 98px;
+    }
+  }
+}
